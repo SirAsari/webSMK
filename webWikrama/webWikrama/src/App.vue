@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <Header title="Hello" /> 
+    <Hero />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Hero from './components/hero/hero.vue'
 
 export default {
   name: 'App', 
   components: {
-    Header
+    Hero
   }
 }
 </script>
