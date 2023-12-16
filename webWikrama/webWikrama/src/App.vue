@@ -1,18 +1,17 @@
 <template>
   <div class="container">
-    <Header />
+    <Header title="Hello" /> 
   </div>
 </template>
 
 <script>
-// import { RouterLink, RouterView } from 'vue-router'
-import Header from './components/Header'
+import Header from './components/Header.vue'
 
 export default {
-    name: 'Header',
-    components: {
-      Header
-    },
+  name: 'App', 
+  components: {
+    Header
+  }
 }
 </script>
 

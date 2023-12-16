@@ -1,21 +1,25 @@
 <template>
     <header>
-        <h1>{{ title }}</h1>
+      <h1>{{ title }}</h1>
     </header>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  export default {
     name: 'Header',
-    props: ['title']
-}
-</script>
+    props: {
+      title: String 
+    }
+  }
+  </script>
+  
+  <style scoped>
 
-<style scoped>
-header {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-block: 20px;
-}
-</style>
+  }
+  </style>
+  
