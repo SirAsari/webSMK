@@ -1,16 +1,21 @@
 <template>
   <div class="container">
-    <Hero />
+    <Navbar />
+    <MainComponent />
   </div>
 </template>
 
 <script>
-import Hero from './components/hero/hero.vue'
+import Footer from './components/Footer.vue'
+import MainComponent from './components/MainComponent.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App', 
   components: {
-    Hero
+    Navbar,
+    MainComponent,
+    Footer,
   }
 }
 </script>
