@@ -110,8 +110,9 @@ export default {
 .col.text-center h3 {
   /* margin-top: px; */
   color: rgba(33, 56, 102, 1);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .col.text-center p {
