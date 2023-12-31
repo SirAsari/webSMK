@@ -4,6 +4,7 @@
         <Hero/>
         <Section1/>
         <Services/>
+        <Section3/>
     </div>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import Hero from './Hero.vue'
 import Section1 from './sections/Section1.vue'
 import Services from './sections/Services.vue'
+import Section3 from './sections/Section3.vue'
 
 export default {
   name: 'MainComponent',
@@ -19,6 +21,7 @@ export default {
     Hero,
     Section1,
     Services,
+    Section3,
   },
  
 };

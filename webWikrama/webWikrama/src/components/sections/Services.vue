@@ -70,6 +70,7 @@
 }
 
 .service-card img {
+  pointer-events: none;
   width: 65px;
   height: 69px;
 }

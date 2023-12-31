@@ -1,4 +1,4 @@
 {
     "discord.enabled": false,
-    "vscord.enabled": false
+    "vscord.enabled": true
 }
