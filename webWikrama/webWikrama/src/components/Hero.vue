@@ -46,7 +46,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 26px;
+  margin-top: 36px;
 }
 
 .primary-button {
