@@ -27,7 +27,7 @@ export default {
     name: 'Section3',
     data() {
         return {
-            texts: ['This is Text 1', 'This is Text 2', 'This is Text 3'], 
+            texts: ['KLN', 'HTL', 'TKJ', 'RPL', 'MMD', 'MPLB', 'PMN'], 
             currentIndex: 0, // index for the current big text
             currentSlide: 0,
             touchStartX: 0,
@@ -35,6 +35,9 @@ export default {
             slides: [
                 { image: 'people-kln.png' },
                 { image: 'people-htl.png' },
+                { image: 'people-tkj.png' },
+                { image: 'people-tkj.png' },
+                { image: 'people-tkj.png' },
                 { image: 'people-tkj.png' },
             ],
             autoPlay: null
@@ -47,11 +50,49 @@ export default {
             }, 8000); // Change text every 8 seconds
         },
         nextSlide() {
-            this.currentSlide = (this.currentSlide + 1) % this.slides.length;
-        },
-        prevSlide() {
-            this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
-        },
+    this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+
+    // Update currentIndex based on the current slide
+    switch (this.currentSlide) {
+      case 0:
+        this.currentIndex = 0; // Corresponding index for 'KLN' slide
+        break;
+      case 1:
+        this.currentIndex = 1; // Corresponding index for 'HTL' slide
+        break;
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        this.currentIndex = 2; // Corresponding index for 'TKJ' slides
+        break;
+      default:
+        this.currentIndex = 6; // Corresponding index for 'PMN' slide
+        break;
+    }
+  },
+  prevSlide() {
+    this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+
+    // Update currentIndex based on the current slide
+    switch (this.currentSlide) {
+      case 0:
+        this.currentIndex = 0; // Corresponding index for 'KLN' slide
+        break;
+      case 1:
+        this.currentIndex = 1; // Corresponding index for 'HTL' slide
+        break;
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        this.currentIndex = 2; // Corresponding index for 'TKJ' slides
+        break;
+      default:
+        this.currentIndex = 6; // Corresponding index for 'PMN' slide
+        break;
+    }
+  },
         startAutoPlay() {
             this.autoPlay = setInterval(() => {
                 this.nextSlide();
@@ -115,7 +156,7 @@ img {
 .carousel-wrapper {
   position: relative;
   width: 500px; /* Set your preferred width */
-  padding: 25px 20px 0 0;
+  padding: 40px 20px 0 0;
 }
 
 .carousel-bg {
@@ -148,6 +189,10 @@ img {
 .active {
   display: inline-block;
   height: 80%;
+}
+
+.flex-right-container {
+    margin-right: 4rem;
 }
 
 .flex-right-container h3 {
