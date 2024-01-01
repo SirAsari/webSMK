@@ -18,6 +18,21 @@
                 </p>   
             </div>
             <hr>
+            <div class="description-text">
+              <div class="first-row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Cras pretium magna ac tristique consectetur. Maecenas mollis 
+                   consequat sodales. Vivamus quis elementum orci. 
+                </p>
+              </div>
+              <div class="second-row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Cras pretium magna ac tristique consectetur. Maecenas mollis 
+                   consequat sodales. Vivamus quis elementum orci.
+                </p>
+              </div>
+            </div>
+            <button class="left-corner-button">Baca Detail</button>
         </div>
     </div>
 </template>
@@ -61,10 +76,19 @@ export default {
         this.currentIndex = 1; // Corresponding index for 'HTL' slide
         break;
       case 2:
-      case 3:
-      case 4:
-      case 5:
         this.currentIndex = 2; // Corresponding index for 'TKJ' slides
+        break;
+      case 3:
+        this.currentIndex = 3; // Corresponding index for 'TKJ' slides
+        break;
+      case 4:
+        this.currentIndex = 4; // Corresponding index for 'TKJ' slides
+        break;
+      case 5:
+        this.currentIndex = 5; // Corresponding index for 'TKJ' slides
+        break;
+      case 5:
+        this.currentIndex = 5; // Corresponding index for 'TKJ' slides
         break;
       default:
         this.currentIndex = 6; // Corresponding index for 'PMN' slide
@@ -83,16 +107,22 @@ export default {
         this.currentIndex = 1; // Corresponding index for 'HTL' slide
         break;
       case 2:
-      case 3:
-      case 4:
-      case 5:
         this.currentIndex = 2; // Corresponding index for 'TKJ' slides
         break;
+      case 3:
+        this.currentIndex = 3; // Corresponding index for 'TKJ' slides
+        break;
+      case 4:
+        this.currentIndex = 4; // Corresponding index for 'TKJ' slides
+        break;
+      case 5:
+        his.currentIndex = 5; // Corresponding index for 'TKJ' slides
+        break;
       default:
-        this.currentIndex = 6; // Corresponding index for 'PMN' slide
+        this.currentIndex = 0; // Corresponding index for 'PMN' slide
         break;
     }
-  },
+  },     
         startAutoPlay() {
             this.autoPlay = setInterval(() => {
                 this.nextSlide();
@@ -151,6 +181,7 @@ img {
     justify-content: space-around;
     margin-top: 13rem;
     margin-bottom: 10rem;
+    height:fit-content;
 }
 
 .carousel-wrapper {
@@ -192,6 +223,9 @@ img {
 }
 
 .flex-right-container {
+  display: flex;
+  flex-direction: column;
+    width: 30rem;
     margin-right: 4rem;
 }
 
@@ -202,34 +236,76 @@ img {
 }
 
 .sub-title {
-    margin-top: 2rem;
-    display: flex;
-    max-height: 30px;
+  margin-top: 1.3rem;
+  display: flex;
+  max-height: 60px; /* Set a fixed max-height */
+  flex-wrap: wrap; /* Allow the text to wrap within the fixed height */
+  overflow: hidden; /* Hide overflow text beyond the fixed height */
 }
 
 .text {
+  font-weight: 600;
   font-family: 'Poppins';
   margin-right: 20px; /* Adjust spacing between texts */
-  transition: font-size 0.5s ease, margin-top 0.5s ease; /* Apply a smooth transition */
-  color: rgba(33, 56, 102, 0.678);
+  transition: font-size 0.5s ease, 
+  margin-top 0.5s ease; /* Apply a smooth transition */
+  color: rgba(33, 56, 102, 0.588);
   margin-top: 0; /* Initially set margin-top to 0 */
+  flex-shrink: 0; /* Prevent text from shrinking to fit */
+  line-height: 30px; /* Set line height for the text */
+  font-size: 19px;
 }
 
 .big {
-  color: rgba(33, 56, 102, 0.601);
+  color: rgba(33, 56, 102, 0.9);
   font-size: 24px; /* Bigger font size for active text */
   font-family: Poppins;
   font-weight: 600;
   margin-top: -6px; /* Adjust the margin to shift the text upwards */
-}
+} 
 
 hr {
-    border: 4.5px solid #EBEBEB;;
+    border: 2.4px solid rgba(33, 56, 102, 0.80);
      border-radius: 5px;
 }
 
 p {
     margin-bottom: 0;
 }
+
+.description-text {
+  padding-top: 1rem;
+}
+
+.description-text p {
+  color: rgba(33, 56, 102, 0.65);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.second-row p {
+  margin-top: 15px;
+}
+
+.left-corner-button {
+  top: 10px; 
+  left: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #80A4ED;
+  box-shadow: 0px 10px 30.1px 14px rgba(128, 164, 237, 0.15);
+  margin-top: auto; 
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Raleway';
+}
+
 </style>
   

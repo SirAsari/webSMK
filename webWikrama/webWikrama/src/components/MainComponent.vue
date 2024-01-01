@@ -21,7 +21,7 @@ export default {
     Hero,
     Section1,
     Services,
-    Section3,
+    Section3, 
   },
  
 };

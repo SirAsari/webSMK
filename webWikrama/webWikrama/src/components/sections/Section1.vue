@@ -76,9 +76,9 @@ export default {
 }
 
 .visi-text hr, .misi-text hr {
-    margin-top: 13px;
     margin-left: 12px;
     width: 500px;
+    border: 2px solid rgba(33, 56, 102, 0.80);
 }
 .visi-text h5, .misi-text h5{ 
     font-family: 'Poppins';
