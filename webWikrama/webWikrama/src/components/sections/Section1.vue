@@ -6,6 +6,7 @@ export default {
 
 <template>
     <div class="section1-container">
+        <div class="container">
         <h3>Sukses Bersama SMK Wikrama Bogor</h3>
         <p>Sejak 1996, Wikrama turut serta dalam membina masa depan bangsa dengan mendidik generasi muda Indonesia.</p>
         <div class="text-flex">
@@ -31,14 +32,16 @@ export default {
                     <li>Membangun kebersamaan sosial, jiwa kewirausahaanm dan gerakan cinta tanah air dan lingkungan.</li>
                 </ul>
             </div>
+        </div>  
         </div>
+       
     </div>
 </template>
 
 <style scoped>
 .section1-container {
     margin-top: 5rem;
-    padding: 42px 126px 38px 126px;
+    padding: 42px 0 38px 0;
     background-color: #EEF1F7;
     position: absolute;
     left: 0;
@@ -89,11 +92,6 @@ export default {
     width: 500px;
     font-family: 'Raleway', sans-serif;
 }
-
-.misi-text {
-    margin-right: 30px;
-}
-
 .visi-text ul, .misi-text ul {
     color: rgba(33, 56, 102, 0.80);
     font-size: 18px;

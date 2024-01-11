@@ -182,6 +182,7 @@ img {
     margin-top: 13rem;
     margin-bottom: 10rem;
     height:fit-content;
+  
 }
 
 .carousel-wrapper {
