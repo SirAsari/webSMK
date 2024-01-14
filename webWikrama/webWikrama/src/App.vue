@@ -1,7 +1,10 @@
 <template>
-  <div class="container">
-    <Navbar />
-    <MainComponent />
+  <div>
+    <div class="container">
+      <Navbar />
+      <MainComponent />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -11,7 +14,7 @@ import MainComponent from './components/MainComponent.vue'
 import Navbar from './components/Navbar.vue'
 
 export default {
-  name: 'App', 
+  name: 'App',
   components: {
     Navbar,
     MainComponent,
@@ -20,6 +23,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

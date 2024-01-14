@@ -77,17 +77,18 @@
 
 .service-card h3 {
   margin-top: 26px;
-  font-size: 1.2rem;
-  color: rgba(33, 56, 102, 0.79);
+  font-size: 1.1rem;
+  color: rgba(43, 71, 128, 0.741);
   font-weight: 600;
-  font-style: italic;
-  font-family: 'Raleway', sans-serif;
   margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.6px;
 }
 
 .service-card p {
-  color: rgba(33, 56, 102, 0.80);
-  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(43, 72, 128, 0.588);
+  font-size: 16px;
   line-height: 1.5;
 }
 

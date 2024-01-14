@@ -231,7 +231,7 @@ img {
 }
 
 .flex-right-container h3 {
-    color: rgba(33, 56, 102, 0.80);
+    color: #213866;
     font-family: Poppins;
     font-weight: 600;
 }
