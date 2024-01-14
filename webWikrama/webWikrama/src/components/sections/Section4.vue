@@ -57,7 +57,6 @@
       <div class="slide">
         <div class="slide-content"></div>
       </div>
-
     </div>
   </div>
 </template>
@@ -67,7 +66,6 @@
 </script>
   
 <style scoped>
-
 .section-4-slider {
   height: 250px;
   margin: auto;
@@ -82,7 +80,6 @@
   width: calc(250px * 18);
   animation: scroll 40s linear infinite;
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
